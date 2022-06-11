@@ -6,11 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="pdf.css">
 </head>
 
 <body>
-    <div class="generate">My name is nandini</div>
-    <button onclick="generatePdf()">pdf</button>
+    <div class="generate">
+        <div class="top">
+            <div class=" topLeft">
+                <h1 class="clinicName">Clinic Name</h1>
+                <p class="clinicAddress">hjgwegflosdjhvds
+                    <br>
+                    gyashud gchdgh, cjhasiaschn,
+                    <br>
+                    cykfugvy
+                </p>
+            </div>
+            <div class="topRight">
+                <h3 class="contact">Contacts </h3>
+                <p class="haveContacts">chasjoin
+                    <br>
+                    +91 2873472732
+                    <br>
+                    +91 3289479174
+                </p>
+            </div>
+        </div>
+        <!-- <i class='fas fa-allergies' style='font-size:36px'></i> -->
+        <div class="complete">
+            <div class="patientDetails part">
+                <h4 class="personalDetails"><u>Personal Details</u></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <label class="labels" for="fname">Name: </label>
+                    <br>
+                    <input type="text" name="fname" required>
+                </div>
+                <div class="inputBox">
+                    <label class="labels" for="no.">Phone Number: </label>
+                    <br>
+                    <input type="text" name="no." required>
+                </div>
+
+                <div class="inputBox">
+                    <label class="labels" for="email">Email: </label>
+                    <br>
+                    <input type="text" name="email" required>
+                </div>
+
+                <div class="inputBox">
+                    <label class="labels" for="add">Address:</label>
+                    <br>
+                    <input type="text" name="add" required>
+                </div>
+            </div>
+
+            <div class="additionalDetails part">
+                <h4 class="medicalDetails"><u>Medical Details:</u></h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="inputBox">
+                    <label class="labels" for="weight">Weight: </label>
+                    <br>
+                    <input type="text" name="weight" required>
+                </div>
+                <div class="inputBox">
+                    <label class="labels" for="height">Height: </label>
+                    <br>
+                    <input type="text" name="height" required>
+                </div>
+
+                <div class="inputBox">
+                    <label class="labels" for="blood">Blood Group: </label>
+                    <br>
+                    <input type="text" name="blood">
+                </div>
+            </div>
+        </div>
+        <button onclick="generatePdf()" class="genpdf">pdf</button>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="pdf.js"></script>
 </body>
